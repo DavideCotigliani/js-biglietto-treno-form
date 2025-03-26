@@ -12,17 +12,17 @@
         <div class="row">
             <div class="col-md-12">
                 <form action="">
-                    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-                    <div class="row row-cols-3">
-                        <div class="col">
+                    <h2 class="form-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                    <div class="form-row">
+                        <div class="form-column">
                             <label for="nomecognome">Nome Cognome</label>
                             <input type="text" placeholder="Nome completo" id="nomecognome">
                         </div>    
-                        <div class="col">
+                        <div class="form-column">
                             <label for="km">km da percorrere</label>
                             <input type="text" placeholder="Inserisci i km " id="km" required>
                         </div>
-                        <div class="col">
+                        <div class="form-column">
                             <label for="età">Fascia d'età</label>
                             <select name="" id="età" required>
                             <option value="Minorenne">Minorenne</option>
@@ -30,8 +30,10 @@
                             <option value="over 65">over 65</option>
                             </select>
                         </div>
+                        <div class="form-buttons">
                             <button id="buttongenerate">Genera</button>
-                            <button>Annulla</button>
+                            <button class="cancel-button">Annulla</button>
+                        </div>
                     </div>
                 </form>
             </div>
