@@ -19,7 +19,6 @@ buttongenerate.addEventListener('click', function(event){
     const chilometri = parseFloat(km.value);
     const age = parseInt(età.value);
 
-    // per definire final price
     let price = chilometri * priceKm;
     let finalPrice = price;
 
