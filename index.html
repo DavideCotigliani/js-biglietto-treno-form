@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <label for="nomecognome">Nome Cognome</label>
+    <input type="text" id="nomecognome">
+
+    <label for="km">km da percorrere</label>
+    <input type="text" id="km" required>
+
+    <label for="età">Fascia d'età</label>
+    <select name="" id="età" required>
+        <option value="Minorenne">Minorenne</option>
+        <option value="tra i 18 e i 64 anni">tra i 18 e i 64 anni</option>
+        <option value="over 65">over 65</option>
+    </select>
+  
+    <button id="buttongenerate">Genera</button>
+
+    <button>Annulla</button>
     
     <script src="script.js"></script>
 </body>
