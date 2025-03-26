@@ -13,12 +13,15 @@ const annidelpasseggero = document.getElementById('annidelpasseggero')
 const prezzobiglietto=document.getElementById('prezzobiglietto')
 
 // corpo del programma
-buttongenerate.addEventListener('click', function(){
-    const chilometri = km.value;
-    const age = età.value;
+buttongenerate.addEventListener('click', function(event){
+    event.preventDefault();
 
+    const chilometri = parseFloat(km.value);
+    const age = parseInt(età.value);
+    
+    // per definire final price
     let price = chilometri * priceKm;
-    let finalPrice;
+    let finalPrice = price;
 
     if (age < 18) {
         finalPrice = price - price * 20 / 100;
@@ -29,9 +32,9 @@ buttongenerate.addEventListener('click', function(){
     else{
         finalPrice = price;
     }
-
-
-
-//     // risultato in console
-// console.log(`Il prezzo è di ${finalPrice.toFixed(2)} \u20AC`)
+    
+    myname.innerHTML = nameField.value;
+    distanza.innerHTML = km.value;
+    annidelpasseggero.innerHTML = età.value;
+    prezzobiglietto.innerHTML = finalPrice.toFixed(2) + "€";
 })
